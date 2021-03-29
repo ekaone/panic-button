@@ -1,0 +1,30 @@
+.push_button {
+  position: relative;
+  width: 100px;
+  height: 60px;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  margin: 0 auto;
+  border-radius: 15px;
+  border: solid 1px #d94e3b;
+  background: #cb3b27;
+  text-align: center;
+  padding: 20px 30px;
+
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+
+  -webkit-box-shadow: 0px 9px 0px #84261a;
+  -moz-box-shadow: 0px 9px 0px #84261a;
+  box-shadow: 0px 9px 0px #84261a;
+  outline: none !important;
+}
+
+.push_button:active {
+  -webkit-box-shadow: 0px 2px 0px #84261a;
+  -moz-box-shadow: 0px 2px 0px #84261a;
+  box-shadow: 0px 2px 0px #84261a;
+  top: 7px;
+}
