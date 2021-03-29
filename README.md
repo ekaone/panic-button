@@ -20,7 +20,7 @@
 git clone https://github.com/ekaone/panic-button.git
 cd panic-button
 npm install
-npm start
+npm run dev
 ```
 
 ## :interrobang: Usage
