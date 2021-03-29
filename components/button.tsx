@@ -40,7 +40,7 @@ function Button({ lat, long, localtime }: ButtonProps) {
       setStatus("Need help");
     }
 
-    if (longPressCount > 1) {
+    if (longPressCount >= 1) {
       setStatus("Warning danger!!!");
       fetch(url)
         .then((response) => response.json())
