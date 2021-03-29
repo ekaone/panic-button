@@ -6,8 +6,8 @@ const useLongPress = (
   { shouldPreventDefault = true, delay = 300 } = {}
 ) => {
   const [longPressTriggered, setLongPressTriggered] = useState(false);
-  const timeout = useRef();
-  const target = useRef();
+  const timeout: any | undefined = useRef();
+  const target: any | undefined = useRef();
 
   const start = useCallback(
     (event) => {

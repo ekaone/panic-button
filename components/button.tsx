@@ -48,6 +48,10 @@ function Button({ lat, long, localtime }: ButtonProps) {
           console.log(data);
           toast.success("Sent message!");
         });
+      // reset to 0 to prevent click event triggered after longPressCount > 1
+      setTimeout(() => {
+        setlongPressCount(0);
+      }, 3000);
     }
   }, [clickCount, longPressCount]);
 
