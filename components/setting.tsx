@@ -15,11 +15,13 @@ import {
   Stack,
 } from "@chakra-ui/react";
 import { SettingIcon } from "./icons/setting-icon";
+import { useLocalStorage } from "../hooks/useLocalStorage";
 
 function Setting() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [botToken, setBotToken] = useState("");
   const [room, setRoom] = useState("");
+  const [localStorage, setLocalStorage] = useLocalStorage();
   const btnRef = useRef();
 
   const handleChangeBotToken = (e: {
@@ -43,6 +45,10 @@ function Setting() {
   useEffect(() => {
     console.log(room, botToken);
   }, [room, botToken]);
+
+  const handleClickSave = () => {
+    setLocalStorage({ botToken: botToken, room: room });
+  };
 
   return (
     <>
@@ -68,12 +74,10 @@ function Setting() {
               <DrawerBody>
                 <Stack>
                   <Input
-                    value={botToken}
                     placeholder="BOT Token ..."
                     onChange={handleChangeBotToken}
                   />
                   <Input
-                    value={room}
                     placeholder="Group or Channel ..."
                     onChange={handleChangeRoom}
                   />
@@ -84,7 +88,9 @@ function Setting() {
                 <Button variant="outline" mr={3} onClick={handleOnClose}>
                   Cancel
                 </Button>
-                <Button colorScheme="blue">Save</Button>
+                <Button colorScheme="blue" onClick={handleClickSave}>
+                  Save
+                </Button>
               </DrawerFooter>
             </DrawerContent>
           </DrawerOverlay>
