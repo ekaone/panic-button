@@ -13,6 +13,10 @@ import {
   IconButton,
   Flex,
   Stack,
+  ListItem,
+  UnorderedList,
+  Code,
+  Box,
 } from "@chakra-ui/react";
 import { SettingIcon } from "./icons/setting-icon";
 import { useLocalStorage } from "../hooks/useLocalStorage";
@@ -81,6 +85,21 @@ function Setting() {
                     placeholder="Group or Channel ..."
                     onChange={handleChangeRoom}
                   />
+                  <Box>
+                    <UnorderedList>
+                      <ListItem>
+                        Press the button and <b>hold</b> around 1 second, it
+                        will send the data includes coordinates latitude,
+                        longitude and local time to telegram groups or your
+                        channel through REST API.
+                      </ListItem>
+                      <ListItem>
+                        Make sure you have setup a Telegram Bot with{" "}
+                        <Code>@BotFather</Code> and create a new one{" "}
+                        <Code>@your_group</Code> or <Code>@your_channel</Code>
+                      </ListItem>
+                    </UnorderedList>
+                  </Box>
                 </Stack>
               </DrawerBody>
 

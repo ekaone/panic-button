@@ -27,9 +27,16 @@ npm run dev
 
 Press the button and **hold** around `1 second`, it will send the data includes coordinates latitude, longitude and local time to telegram groups or your channel through REST API.
 
+:rocket: [Demo](https://panic-button-eka.vercel.app/)
+
 ## :books: Documentation
 
-Make sure you have setup a Telegram Bot with [`@BotFather`](https://t.me/botfather) and create a new one `@your_group` or `@your_channel`, also invite your Bot that you have created before to your group or your channel, once you have setup BOT Token, group or channel, drop to `.env.local`. Checkout documentation [Telegram API](https://core.telegram.org/bots/api) for more details.
+Make sure setup a Telegram Bot with [`@BotFather`](https://t.me/botfather) and create a new one `@your_group` or `@your_channel`, also invite your `Bot` that you have created before to your `group` or your `channel`, once you have setup BOT Token and group or channel, there are 2 options:
+
+- Drop to `.env.local` (change .env.example) and use it as `process.env.NEXT_PUBLIC_BOT_TOKEN` and `process.env.NEXT_PUBLIC_GROUP/CHANNEL` at the [`url component`](https://github.com/ekaone/panic-button/blob/main/components/button.tsx)
+- Use local storage at setting menu as this [demo](https://panic-button-eka.vercel.app/)
+
+Checkout documentation [Telegram API](https://core.telegram.org/bots/api) for more details.
 
 ## :yum: How to contribute
 
