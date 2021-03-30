@@ -1,8 +1,7 @@
 import Head from "next/head";
 import { usePosition } from "use-position";
 // components
-import { Layout } from "../components";
-import { Button } from "../components";
+import { Layout, Button, Setting } from "../components";
 
 export default function Home() {
   const watch = true;
@@ -20,6 +19,7 @@ export default function Home() {
 
   return (
     <Layout>
+      <Setting />
       <Button lat={latitude} long={longitude} localtime={time} />
     </Layout>
   );

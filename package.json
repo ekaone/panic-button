@@ -36,6 +36,7 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-hot-toast": "^1.0.2",
+    "use-local-storage-state": "^9.0.2",
     "use-position": "0.0.8",
     "valtio": "^0.7.1"
   },
