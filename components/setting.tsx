@@ -88,15 +88,20 @@ function Setting() {
                   <Box>
                     <UnorderedList>
                       <ListItem>
-                        Press the button and <b>hold</b> around 1 second, it
-                        will send the data includes coordinates latitude,
-                        longitude and local time to telegram groups or your
-                        channel through REST API.
+                        You must enable (allowing) your <b>location access</b>{" "}
+                        in your browser.
                       </ListItem>
                       <ListItem>
                         Make sure you have setup a Telegram Bot with{" "}
                         <Code>@BotFather</Code> and create a new one{" "}
-                        <Code>@your_group</Code> or <Code>@your_channel</Code>
+                        <Code>@your_group</Code> or <Code>@your_channel</Code>{" "}
+                        and fill at the form as above.
+                      </ListItem>
+                      <ListItem>
+                        Press the button and <b>hold</b> around 1 second, it
+                        will send the data includes coordinates latitude,
+                        longitude and local time to telegram groups or your
+                        channel through REST API.
                       </ListItem>
                     </UnorderedList>
                   </Box>

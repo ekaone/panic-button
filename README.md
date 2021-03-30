@@ -25,6 +25,8 @@ npm run dev
 
 ## :interrobang: Usage
 
+> NOTE: You must enable (allowing) your location access in your browser.
+
 Press the button and **hold** around `1 second`, it will send the data includes coordinates latitude, longitude and local time to telegram groups or your channel through REST API.
 
 :rocket: [Demo](https://panic-button-eka.vercel.app/)
